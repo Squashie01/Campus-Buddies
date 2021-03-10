@@ -1,0 +1,120 @@
+body
+{
+	margin: 0px;
+	background-image: url("../images/orangeBG.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Index */
+#menu
+{
+	width: 40%;
+	margin-left: 28%;
+	margin-top: 10%;
+	padding: 2%;
+	background-color: rgba(0, 0, 0, .4);
+	text-align: center;
+	color: white;
+	display: block;
+}
+
+#MenuBar
+{
+	display: block;
+}
+
+button
+{
+	background-color: orange;
+	border-style: none;
+	border-radius: 25px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: none;
+}
+
+button:hover
+{
+	background-color: white;
+	color: orange;
+}
+
+
+
+/* Student Sign In*/
+#StudentSignIn
+{
+	display: none;
+}
+
+#StudentSignIn input
+{
+	color: white;
+	border-style: none;
+	border-bottom-color: orange;
+	border-bottom-style: solid;
+	outline: none;
+	text-align: center;
+	background-color: transparent;
+}
+
+::placeholder
+{
+	color: white;
+}
+
+#StudentSignIn label
+{
+	color: white;
+	font-size: 35px;
+}
+
+/* Tutor Sign In */
+#TutorSignIn
+{
+	display: none;
+}
+
+/* Admin Sign In */
+#AdminSignIn
+{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Student Area */
+#StudentMenuBar
+{
+	background-color: white;
+	padding-top: 2px;
+	padding-bottom: 34px;
+}
+
+#StudentMenuBar li
+{
+	background-color: white;
+	list-style-type: none;
+	display: inline;
+	padding-right: 5%;
+	float: right;
+}

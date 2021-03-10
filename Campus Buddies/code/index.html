@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Campus Buddies | Home </title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="JavaScript.js"></script>
+
+</head>
+<body>
+
+	<div id="menu">
+		<div id="MenuBar">
+			<h1> Welcome to Campus Buddies </h1>
+			<button onclick="Student()"> Students </button>
+			<br>
+			<br>
+			<button onclick="Tutor()"> Tutors </button>
+			<br>
+			<br>
+			<button onclick="Admin()"> Admin </button>
+			<br>
+			<br>
+			<button> Register </button>
+		</div>
+
+		<div id="StudentSignIn">
+			<form>
+				<label> Student Sign In </label>
+				<br>
+				<br>
+				<br>
+				<input type="text" name="StudentID" placeholder="Student ID">
+				<br>
+				<br>
+				<input type="text" name="StudentPassword" placeholder="Password">
+				<br>
+				<br>
+				<button type="submit"> Submit </button>
+				<br>
+				<br>
+				<label onclick="Menu()" style="font-size: 17px;"> Go Back </label>
+			</form>
+		</div>
+
+		<div id="TutorSignIn">
+			<form>
+				<label> Tutor Sign In </label>
+				<br>
+				<br>
+				<br>
+				<input type="text" name="TutorID" placeholder="Tutor ID">
+				<br>
+				<br>
+				<input type="text" name="TutorPassword" placeholder="Password">
+				<br>
+				<br>
+				<button type="submit"> Submit </button>
+				<br>
+				<br>
+				<label onclick="Menu()" style="font-size: 17px;"> Go Back </label>
+			</form>
+		</div>
+
+		<div id="AdminSignIn">
+			<form>
+				<label> Admin Sign In </label>
+				<br>
+				<br>
+				<br>
+				<input type="text" name="AdminID" placeholder="Admin ID">
+				<br>
+				<br>
+				<input type="text" name="AdminPassword" placeholder="Password">
+				<br>
+				<br>
+				<button type="submit"> Submit </button>
+				<br>
+				<br>
+				<label onclick="Menu()" style="font-size: 17px;"> Go Back </label>
+			</form>
+		</div>
+
+	</div>
+
+</body>
+</html>
