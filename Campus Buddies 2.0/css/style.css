@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body
+{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+
+:root
+{
+    --primary-orange: #FF4D00;
+    --white: white;
+    --black: black;
+}
+
+
+
+/* Login and SignUp Page CSS */
+
+.LSContainer
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.LSLogo, .LSButtons
+{
+    height: 50vh;
+    width: 40%;
+}
+
+.LSLogo
+{
+    display: flex;
+    align-items: center;
+}
+
+.LSLogo img
+{
+    width: 100%;
+}
+
+.LSButtons
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonCSS
+{
+    background-color: var(--primary-orange);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 10em;
+    margin-bottom: 15%;
+}
+
+
+
+/* Login Page CSS */
+
+.LoginPageContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.LoginContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginHeader
+{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.LoginBack
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.LoginText
+{
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 60px;
+    font-weight: 700;
+}
+
+.LoginForm
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 75%;
+}
+
+.LoginForm input
+{
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.bottomLogo
+{
+    height: 8vh;
+    width: 9em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottomLogo img
+{
+    width: 100%;
+}
+
+.LoginBtn
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Navbar CSS */
+
+
+    
+
+
+@media screen and (max-width: 930px)
+{
+    /* Login and SignUp Page CSS */
+    .LSContainer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .LSLogo, .LSButtons
+    {
+        width: 85%;
+        height: 45vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    /* Nav Bar CSS */
+
+    nav
+    {
+        width: 100%;
+        background-color: green;
+        display: flex;
+        margin-top: 25px;
+    }
+
+    .navbar .logo
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .logo img
+    {
+        width: 110px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar ul li
+    {
+        display: none;
+    }
+
+    .navbar .openMenu
+    {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        width: 100px;
+        font-size: 25px;
+    }
+
+    .navbar .closeMenu
+    {
+        display: none;
+    }
+
+
+    /* This is the section with the Student's name and their profile button*/
+    .userBar
+    {
+        background-color: aqua;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .userBar span
+    {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .userBar img
+    {
+        width: 50px;
+    }
+
+    /* This is the search bar */
+    .ServicesSearchBar
+    {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+    }
+
+    .ServicesSearchBar input
+    {
+        background-color: yellow;
+        border: none;
+        outline: none;
+        border-radius: 300px;
+        width: 250px;
+        height: 25px;
+        text-align: center;
+    }
+
+
+    /* Discover Text CSS */
+
+    .DiscoverText
+    {
+        background-color: yellowgreen;
+        margin-top: 25px;
+    }
+
+    .DiscoverText span
+    {
+        margin-left: 30px;
+        font-weight: 600;
+    }
+
+    /* Services Boxes CSS */
+    .Services
+    {
+        background-color: violet;
+        width: 100%;
+        display: grid;
+        grid-gap: 15px;
+    }
+
+    .ServiceBox
+    {
+        background-color: var(--primary-orange);
+        width: 150px;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .ServiceBox img
+    {
+        width: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ServiceBox span
+    {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
