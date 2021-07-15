@@ -41,7 +41,7 @@
 
 
     <!-- This is the carousel -->
-
+    <div class="HomePageCarousel"></div>
 
 
 
@@ -76,6 +76,17 @@
             <img src="../images/CampusBuddyNoText.png" alt="">
             <span> Library </span>
         </div>
+    </div>
+
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottomNav">
+        <ul>
+            <li><i class="fas fa-exclamation-triangle"></i></li>
+            <li><i class="fas fa-home"></i></li>
+            <li><i class="fas fa-calendar-alt"></i></li>
+            <li><i class="fas fa-bell"></i></li>
+        </ul>
     </div>
 
 
