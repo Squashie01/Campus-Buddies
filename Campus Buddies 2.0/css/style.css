@@ -183,7 +183,6 @@ a
     nav
     {
         width: 100%;
-        background-color: green;
         display: flex;
         margin-top: 25px;
     }
@@ -430,6 +429,47 @@ a
         width: 60%;
         text-align: center;
     }
-
     
+    .MoreStudentInfo
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .MoreStudentInfo span.InfoTitle
+    {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .MoreStudentInfo span.InfoHeader
+    {
+        font-size: 13px;
+        opacity: 75%;
+    }
+
+    .MoreStudentInfo span.YearAndSemester
+    {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .TimeTable
+    {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .TimeTable span
+    {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .TimeTable img
+    {
+        width: 55px;
+    }
 }
