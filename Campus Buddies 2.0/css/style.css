@@ -31,6 +31,79 @@ a
     --lightGrey: rgba(192, 189, 189, 0.226);
 }
 
+/* Carousel CSS */
+.swiper-container 
+{
+    padding-right: 15%;
+    padding-left: 15%;
+    width: 70%;
+    height: 142px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide 
+{
+    text-align: center;
+    font-size: 18px;
+    background: seagreen;
+    border-radius: 15px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img 
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(40%);
+}
+
+.swiper-slide span
+{
+    position: absolute;
+    font-weight: 600;
+    color: var(--white);
+    margin-top: -15px;
+}
+
+.swiper-slide button
+{
+    position: absolute;
+    font-size: 14px;
+    height: 27px;
+    width: 42%;
+    margin-top: 90px;
+    background-color: var(--white);
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: var(--primary-orange);
+}
+
+.swiper-container 
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 /* Login and SignUp Page CSS */
@@ -161,10 +234,6 @@ a
 }
 
 
-
-/* Navbar CSS */
-
-
     
 
 
@@ -194,13 +263,8 @@ a
     {
         width: 100%;
         display: flex;
-        margin-top: 25px;
-    }
-
-    .navbar .logo
-    {
-        display: flex;
-        justify-content: center;
+        margin-top: 10px;
+        justify-content: space-between;
     }
 
     .navbar .logo img
@@ -220,7 +284,6 @@ a
         display: flex;
         align-items: center;
         margin-left: 30px;
-        width: 100px;
         font-size: 25px;
     }
 
@@ -234,9 +297,9 @@ a
     .userBar
     {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .userBar span
@@ -245,25 +308,16 @@ a
         align-items: center;
         font-size: 25px;
         font-weight: 600;
+        margin-left: 30px;
     }
 
     .userBar img
     {
-        width: 4rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 30px;
         border-radius: 50%;
         border: 2px solid var(--primary-orange);
-    }
-
-    /* Homepage Carousel */
-    .HomePageCarousel
-    {
-        background-color: blueviolet;
-        width: 70%;
-        height: 140px;
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     /* This is the search bar */
@@ -278,12 +332,12 @@ a
 
     .ServicesSearchBar input
     {
-        background-color: yellow;
+        background-color: var(--lightGrey);
         border: none;
         outline: none;
         border-radius: 300px;
         width: 285px;
-        height: 25px;
+        height: 27px;
         text-align: center;
     }
 
@@ -305,7 +359,7 @@ a
     .Services
     {
         width: 90%;
-        margin-top: 15px;
+        margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
         display: grid;
