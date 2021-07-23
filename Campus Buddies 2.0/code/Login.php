@@ -26,20 +26,47 @@
                     Login
                 </div>
             </div>
-    
-            <div class="LoginForm">
-                <form action="../php/login.php" method="post">
-                    <label for="StudentId"> Student ID </label>
-                    <input type="text" name="studentId"> <br>
-                    <br>
-                    <label for="Password"> Password </label>
-                    <input type="password" name="uPassword"> <br>
-                    <br>
-                    <br>
-                    <div class="LoginBtn" id="buttonCSS"> <button  type="submit"> Login </button>  </div>
-                </form>
-            </div>
-            
+            <?php
+                session_start();
+                $badLogin=$_SESSION['login_error'];
+                if($badLogin == "y")
+                {
+                    echo
+                    "
+                        <div class='LoginForm'>
+                            <form action='../php/login.php' method='post'>
+                                <label for='StudentId'> Student ID </label>
+                                <input type='text' name='studentId'> <br>
+                                <br>
+                                <label for='Password'> Password </label>
+                                <input type='password' name='uPassword'> <br>
+                                <br>
+                                <br>
+                                <div class='LoginBtn' id='buttonCSS'> <button  type='submit'> Login </button>  </div>
+                            </form>
+                        </div> 
+                    " . "your login creduntuals are wrong";
+                }
+                else
+                {
+                    echo
+                    "
+                        <div class='LoginForm'>
+                            <form action='../php/login.php' method='post'>
+                                <label for='StudentId'> Student ID </label>
+                                <input type='text' name='studentId'> <br>
+                                <br>
+                                <label for='Password'> Password </label>
+                                <input type='password' name='uPassword'> <br>
+                                <br>
+                                <br>
+                                <div class='LoginBtn' id='buttonCSS'> <button  type='submit'> Login </button>  </div>
+                            </form>
+                        </div>
+                    ";
+                    $_SESSION['login_error']="n";
+                }
+            ?>
         </div>
     
         <div class="bottomLogo">
