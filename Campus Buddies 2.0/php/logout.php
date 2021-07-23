@@ -2,5 +2,7 @@
     session_start();
 
     session_destroy();
-    header("location: ../code/login.html")
+    session_start();
+    $_SESSION['login_error']="n";
+    header("location: ../code/login.php")
 ?> 

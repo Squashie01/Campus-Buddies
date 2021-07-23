@@ -18,8 +18,7 @@
             {
                 if((($studentId == $row["StudentID"]) || ($studentId == $row["TeacherId"]))  && ($uPassword == $row["Password"]))
                 {
-                    session_destroy();
-                    session_start();
+                    $_SESSION['login_error']="n";
                     $_SESSION['id']=$studentId;
                     header("Location: Homepage.php");
                 }
