@@ -1,6 +1,7 @@
 <html>
     <body>
         <?php
+        session_start();
             $servername = "localhost";
 			$username = "root";
 			$password = "";
@@ -17,7 +18,7 @@
             {
                 if((($studentId == $row["StudentID"]) || ($studentId == $row["TeacherId"]))  && ($uPassword == $row["Password"]))
                 {
-                    $_SESSION["id"]=$row["StudentID"];
+                    $_SESSION['id']=$studentId;
                     header("Location: Homepage.php");
                 }
                 else 
