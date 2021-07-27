@@ -9,7 +9,7 @@
 
         <link rel="shortcut icon" type="image" href="../images/CampusBuddyNoText.png">
 
-        <title> Campus Buddy | Homepage </title>
+        <title> Campus Buddy | Settings </title>
 
         <link rel="stylesheet" href="../css/style.css">
     </head>
@@ -41,8 +41,8 @@
             header("location: ../code/login.html");
         }
     ?>
-    <form action="../php/logout.php">
-        <button type="submit"> logout </button>
+    <form action="../php/logout.php" class="LogOutForm">
+        <button type="submit"> Logout </button>
     </form>
     </body>
 </html>

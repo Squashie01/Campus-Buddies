@@ -18,6 +18,18 @@ a
     color: var(--black);
 }
 
+button
+{
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border: none;
+    outline: none;
+    padding: 7px 25px;
+    font-size: 15px;
+    border-radius: 25px;
+    text-align: center;
+}
+
 
 
 :root
@@ -858,5 +870,12 @@ a
     .borderSettings:not(:nth-child(4n)) 
     {
         border-right: 1px solid var(--FadedBrown);
+    }
+
+    /* Logout Page CSS */
+    .LogOutForm
+    {
+        display: flex;
+        justify-content: center;
     }
 }
