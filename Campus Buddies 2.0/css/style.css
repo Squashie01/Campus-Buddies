@@ -18,6 +18,18 @@ a
     color: var(--black);
 }
 
+button
+{
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border: none;
+    outline: none;
+    padding: 7px 25px;
+    font-size: 15px;
+    border-radius: 25px;
+    text-align: center;
+}
+
 
 
 :root
@@ -258,38 +270,81 @@ a
 
 
     /* Nav Bar CSS */
-
     nav
     {
         width: 100%;
-        display: flex;
-        margin-top: 10px;
-        justify-content: space-between;
+        margin-top: 17px;
     }
-
+    
     .navbar .logo img
     {
         width: 110px;
-        display: flex;
-        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .navbar ul li
+    #sidebar div.openMenu i
     {
-        display: none;
-    }
-
-    .navbar .openMenu
-    {
-        display: flex;
-        align-items: center;
         margin-left: 30px;
         font-size: 25px;
     }
 
-    .navbar .closeMenu
+    #sidebar 
     {
-        display: none;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        background: #ff4d00;
+        left: -300px;
+        top: 0;
+        transition: .4s;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sidebar div.closeMenu i
+    {
+        font-size: 25px;
+        color: var(--white);
+        margin-top: 25px;
+        padding-left: 25px;
+    }
+
+    #sidebar ul li 
+    {
+        list-style: none;
+        color: #fff;
+        font-size: 17px;
+        padding: 26px 24px;
+    }
+
+    #sidebar ul li.active
+    {
+        font-weight: 600;
+    }
+
+    #sidebar .toggle-btn 
+    {
+        position: absolute;
+        top: 25px;
+        left: 330px;
+        font-size: 25px;
+    }
+
+    .toggle-btn span 
+    {
+        width: 45px;
+        height: 4px;
+        background: #000;
+        display: block;
+        margin-top: 4px;
+    }
+
+    #sidebar.active 
+    {
+        left: 0;
     }
 
 
@@ -624,6 +679,11 @@ a
         z-index: 5;
     }
 
+    .NoScroll div.userBar
+    {
+        margin-top: 55px;
+    }
+
     .PageTitle
     {
         font-size: 20px;
@@ -677,7 +737,7 @@ a
         display: flex;
         flex-direction: column;
         width: 80%;
-        margin-top: 260px;
+        margin-top: 175px;
         margin-left: auto;
         margin-right: auto;
         z-index: 3;
@@ -810,5 +870,12 @@ a
     .borderSettings:not(:nth-child(4n)) 
     {
         border-right: 1px solid var(--FadedBrown);
+    }
+
+    /* Logout Page CSS */
+    .LogOutForm
+    {
+        display: flex;
+        justify-content: center;
     }
 }
