@@ -50,6 +50,7 @@
         $firstName="defult";
         $studentId=$_SESSION['id'];
 
+        //this checks for if they are a student
         while($row = $result ->fetch_assoc())
         {
             if($studentId == $row["StudentID"]) 
@@ -59,9 +60,19 @@
                 //echo "this works";
                // echo $row["First_Name"];
             }
-                
-            
         }
+
+            while($row = $result ->fetch_assoc())
+            {
+                if($studentId == $row["TeacherId"]) 
+                {
+                    $firstName = $row["First_Name"];
+                    $didTheyLogIn = "y";
+                }
+            }
+        }
+
+        //this is if a user tried to enter without loging in 
         if ($didTheyLogIn == "n")
         {
             header("location: ../php/logout.php");

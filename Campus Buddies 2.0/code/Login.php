@@ -31,6 +31,7 @@
                 $badLogin=$_SESSION['login_error'];
                 if($badLogin == "y")
                 {
+                    //this is if they get a wrong password
                     echo
                     "
                         <div class='LoginForm'>
@@ -49,6 +50,7 @@
                 }
                 else
                 {
+                    //this is the first thing they see before attempting to log in
                     echo
                     "
                         <div class='LoginForm'>
