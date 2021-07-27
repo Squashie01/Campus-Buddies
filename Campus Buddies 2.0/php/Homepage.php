@@ -62,6 +62,12 @@
             }
         }
 
+        //this checks to see if they are a teacher
+        if($didTheyLogIn == "n")
+        {
+            $qry="SELECT TeacherId , First_Name  FROM teacher";
+            $result=mysqli_query ($conn, $qry);
+
             while($row = $result ->fetch_assoc())
             {
                 if($studentId == $row["TeacherId"]) 
