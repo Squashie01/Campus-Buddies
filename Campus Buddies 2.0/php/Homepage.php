@@ -18,19 +18,23 @@
 
     <!-- This is the Navigation Bar -->
     <nav class="navbar">
-        <div class="openMenu"><i class="fa fa-bars"></i></div>
         <div class="logo"> <img src="../images/CampusBuddiesTextLogo.png" alt=""> </div>
-        
 
-        <ul class="mainMenu">
-            <li> <a href="#"> This is a link </a> </li>
-            <li> <a href="#"> This is a link </a> </li>
-            <li> <a href="#"> This is a link </a> </li>
-            <li> <a href="#"> This is a link </a> </li>
-            <li> <a href="#"> This is a link </a> </li>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick ="show()">
+              <div id="openMenu"><i class="fa fa-bars"></i></div>
+            </div>
 
-            <div class="closeMenu"><i class="fa fa-times"></i></div>
-        </ul>
+            <div class="closeMenu" onclick ="hide()"><i class="fa fa-times"></i></div>
+
+            <ul>
+              <li class="active">Home</li>
+              <li>Student Support</li>
+              <li>Student ID Profile</li>
+              <li>Semester Calendar</li>
+              <li>Library</li>
+            </ul>
+        </div>
     </nav>
 
 
