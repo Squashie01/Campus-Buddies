@@ -46,7 +46,7 @@
         $qry="SELECT StudentID, First_Name  FROM student";
             $result=mysqli_query ($conn, $qry);
 
-        $didTheyLogIn="";
+        $didTheyLogIn="n";
         $firstName="defult";
         $studentId=$_SESSION['id'];
 
@@ -54,15 +54,19 @@
         {
             if($studentId == $row["StudentID"]) 
             {
-                $firstName == $row["First_Name"];
+                $firstName = $row["First_Name"];
                 $didTheyLogIn = "y";
-                echo "this works";
+                //echo "this works";
+               // echo $row["First_Name"];
             }
-            else 
-            {
-               $didTheyLogIn = "n";
-            }
+                
+            
         }
+        if ($didTheyLogIn == "n")
+        {
+            header("location: ../php/logout.php");
+        }
+        /*
         if($didTheyLogIn == "n")
         {
             $qry="SELECT TeacherId , First_Name  FROM teacher";
@@ -88,8 +92,9 @@
             session_destroy();
             session_start();
             $_SESSION['login_error']="y";
-            header("location: ../code/login.php");
+            //header("location: ../code/login.php");
         }
+        */
 
         echo
         "

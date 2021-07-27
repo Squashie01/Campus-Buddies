@@ -11,12 +11,13 @@
             $studentId=$_POST['studentId'];
             $uPassword=$_POST['uPassword'];
 
-            $qry="SELECT StudentID, Password, TeacherId  FROM login";
+
+            $qry="SELECT * FROM studentlogin";
             $result=mysqli_query ($conn, $qry);
 
             while($row = $result ->fetch_assoc())
             {
-                if((($studentId == $row["StudentID"]) || ($studentId == $row["TeacherId"]))  && ($uPassword == $row["Password"]))
+                if(($studentId == $row["StudentId"])  && ($uPassword == $row["Password"]))
                 {
                     $_SESSION['login_error']="n";
                     $_SESSION['id']=$studentId;
@@ -27,7 +28,7 @@
                     $_SESSION['login_error']="y";
                     header("Location: ../code/Login.php");
                 }
-            }
+            } 
         ?>
     </body>
 </html>

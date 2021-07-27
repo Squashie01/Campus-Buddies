@@ -64,9 +64,10 @@
                             </form>
                         </div>
                     ";
-                    $_SESSION['login_error']="n";
                 }
+                $_SESSION['login_error']="n";
             ?>
+
         </div>
     
         <div class="bottomLogo">
