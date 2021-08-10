@@ -20,8 +20,23 @@
         </div>
     </div>
     <form action="../php/sign_up.php" method="POST" enctype="multipart/form-data">
-
+        <p>Please upload your jpg file </p>
         <input type="file" name="file">
+        </br>
+        <p>First Name </p>
+        <input type="input" name="First_Name">
+        </br>
+        <p>Last Name</p>
+        <input type="input" name="Last_Name"> 
+        </br>
+        <p> email </p>
+        <input type="email" name="email">
+        </br>
+        <p> phone number</p>
+        <input type="input" name="number">
+        </br>
+        
+        </br>
         <button type="submit" name="submit"> UPLOAD </button>
     </form>
 </body>

@@ -8,21 +8,27 @@
         $fileError = $_FILES['file']['error'];
         $fileType = $_FILES['file']['type'];
 
+        $firstname=$_POST['First_Name'];
+        $lastName=$_POST['Last_Name'];
+        $phoneNumber=$_POST['number'];
+        $email=$_POST['email'];
         $fileExt = explode('.', $fileName);
         $fileActualExt = strtolower(end($fileExt));
 
         $allowed = array('jpg', 'jpeg', 'png', 'pdf');
 
+        $fullName=$firstname . $lastName .time() . rand();
+        
         if(in_array($fileActualExt, $allowed))
         {
             if($fileError === 0)
             {
                 if($fileSize < 1000000)
                 {
-                    $fileNameNew = uniqid('', true).".".$fileActualExt;
-                    $fileDestination = '../uploads/'.$fileNameNew;
+                    $fileNameNew = $firstname. $lastName.uniqid('', true).".".$fileActualExt;
+                    $fileDestination = '../uploads/' .$fileNameNew;
                     move_uploaded_file($fileTmpName, $fileDestination);
-                    header("Lacation: ../code/sighn_up.php?uploadsuccess");
+                    header("Location: ../code/sighn_up.php?uploadsuccess");
                 }
                 else
                 {
