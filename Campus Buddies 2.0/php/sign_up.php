@@ -8,21 +8,51 @@
         $fileError = $_FILES['file']['error'];
         $fileType = $_FILES['file']['type'];
 
+        $firstname=$_POST['First_Name'];
+        $lastName=$_POST['Last_Name'];
+        $phoneNumber=$_POST['number'];
+        $email=$_POST['email'];
         $fileExt = explode('.', $fileName);
         $fileActualExt = strtolower(end($fileExt));
 
         $allowed = array('jpg', 'jpeg', 'png', 'pdf');
 
+        $fullName=$firstname . $lastName .time() . rand();
+        
         if(in_array($fileActualExt, $allowed))
         {
             if($fileError === 0)
             {
                 if($fileSize < 1000000)
                 {
-                    $fileNameNew = uniqid('', true).".".$fileActualExt;
-                    $fileDestination = '../uploads/'.$fileNameNew;
+                    $folderC= $firstname.$lastName.time();
+
+                    mkdir("../uploads/" .$folderC);
+
+                    $fileNameNew = $firstname.$lastName.uniqid('', true).".".$fileActualExt;
+                    $fileDestination = '../uploads/'.$folderC."/" .$fileNameNew;
                     move_uploaded_file($fileTmpName, $fileDestination);
-                    header("Lacation: ../code/sighn_up.php?uploadsuccess");
+                    header("Location: ../code/sighn_up.php?uploadsuccess");
+
+                
+                  /*  $servername = "localhost";
+                    $username = "root";
+                    $password = "";
+                    $dbname = "campusbuddies";
+                    $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+                    $qry="SELECT Picture FROM  student";
+                    $result=mysqli_query ($conn, $qry);
+
+                    /*$uploadPic="INSERT INTO student(Picture, First_Name)
+							  VALUES ('$fileDestination', 'Luke');";
+                              mysqli_query($conn, $uploadPic); */
+                    
+                              /*while($row = $result ->fetch_assoc())
+                              {
+                                  echo  "<img src='$row[Picture]' alt='crap'>";
+                              } */
+                    
                 }
                 else
                 {
