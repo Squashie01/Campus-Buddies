@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="shortcut icon" type="image" href="../images/CampusBuddyNoText.png">
+
+    <title> Campus Buddy | Gym </title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="CalendarBackground">
+
+    <div class="CalendarContainer">
+
+        <!-- This is the Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo"> <img src="../images/CampusBuddiesTextLogo.png" alt=""> </div>
+
+            <div id="sidebar">
+                <div class="toggle-btn" onclick ="show()">
+                <div id="openMenu"><i class="fa fa-bars"></i></div>
+                </div>
+
+                <div class="closeMenu" onclick ="hide()"><i class="fa fa-times"></i></div>
+
+                <ul>
+                <li class="active">Home</li>
+                <li>Student Support</li>
+                <li>Student ID Profile</li>
+                <li>Semester Calendar</li>
+                <li>Library</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- This is the top section of the page that doesn't scroll -->
+        <div class="NoScroll">
+            <!-- This is the Section Below the Navigation Bar -->
+            <div class="userBar">
+                <span> Hi, Chris </span>
+                <img src="../images/CampusBuddyNoText.png" alt="">
+            </div>
+
+            <!-- This is the page title -->
+            <div class="PageTitle">
+                <span> Campus Gym </span>
+            </div>
+
+            <!-- Search Bar  -->
+            <div class="SearchBar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+
+        <div class="whiteSpace"></div>
+
+        <div class="GymContent">
+            <div class="FitnessTip"> Today's fitness tip </div>
+            <div class="GymBanner"></div>
+            <div class="FitnessTip"> At-Home Tips & Exercises </div>
+
+            <!-- At-Home Tips and Exercises -->
+            <div class="ExerciseCarousel">
+                <!-- Swiper -->
+                <div class="swiperContainer mySwiper ExerciseSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
+                            <span class="MenuSpan"> Breakfast Menu </span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
+                            <span class="MenuSpan"> Lunch Menu </span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
+                            <span class="MenuSpan"> Dessert Menu </span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
+                            <span class="MenuSpan"> Drink Menu </span>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="MoreExerciseDiv">
+            <div class="MoreExercise">
+                <div class="ExerciseImg">
+                    <img src="https://th.bing.com/th/id/OIP.IBLMz6em0P_yJSE3fa0ScQHaEK?w=291&h=180&c=7&o=5&dpr=1.25&pid=1.7" alt="">
+                </div>
+                <div class="ExerciseTitle">
+                    <p class="TitleSpan"> 
+                        Have you completed your fitness test yet?
+                    </p>
+                    <p class="SubSpan">
+                        Block fitness test
+                    </p>
+                </div>
+                <div class="MoreInfoExercise">
+                    <span> More Info </span> 
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="MoreExercise">
+                <div class="ExerciseImg">
+                    <img src="https://th.bing.com/th/id/OIP.IBLMz6em0P_yJSE3fa0ScQHaEK?w=291&h=180&c=7&o=5&dpr=1.25&pid=1.7" alt="">
+                </div>
+                <div class="ExerciseTitle">
+                    <p class="TitleSpan"> 
+                        Have you completed your fitness test yet?
+                    </p>
+                    <p class="SubSpan">
+                        Block fitness test
+                    </p>
+                </div>
+                <div class="MoreInfoExercise">
+                    <span> More Info </span> 
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="MoreExercise">
+                <div class="ExerciseImg">
+                    <img src="https://th.bing.com/th/id/OIP.IBLMz6em0P_yJSE3fa0ScQHaEK?w=291&h=180&c=7&o=5&dpr=1.25&pid=1.7" alt="">
+                </div>
+                <div class="ExerciseTitle">
+                    <p class="TitleSpan"> 
+                        Have you completed your fitness test yet?
+                    </p>
+                    <p class="SubSpan">
+                        Block fitness test
+                    </p>
+                </div>
+                <div class="MoreInfoExercise">
+                    <span> More Info </span> 
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="MoreExercise">
+                <div class="ExerciseImg">
+                    <img src="https://th.bing.com/th/id/OIP.IBLMz6em0P_yJSE3fa0ScQHaEK?w=291&h=180&c=7&o=5&dpr=1.25&pid=1.7" alt="">
+                </div>
+                <div class="ExerciseTitle">
+                    <p class="TitleSpan"> 
+                        Have you completed your fitness test yet?
+                    </p>
+                    <p class="SubSpan">
+                        Block fitness test
+                    </p>
+                </div>
+                <div class="MoreInfoExercise">
+                    <span> More Info </span> 
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="MoreExercise">
+                <div class="ExerciseImg">
+                    <img src="https://th.bing.com/th/id/OIP.IBLMz6em0P_yJSE3fa0ScQHaEK?w=291&h=180&c=7&o=5&dpr=1.25&pid=1.7" alt="">
+                </div>
+                <div class="ExerciseTitle">
+                    <p class="TitleSpan"> 
+                        Have you completed your fitness test yet?
+                    </p>
+                    <p class="SubSpan">
+                        Block fitness test
+                    </p>
+                </div>
+                <div class="MoreInfoExercise">
+                    <span> More Info </span> 
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <div class="bottomNavBar">
+            <ul class="BottomNavUl">
+                <li class="borderSettings"> <a href="#"> <i class="fas fa-exclamation-triangle"></i> </a> </li>
+                <li class="borderSettings"> <a href="#"> <i class="fas fa-home"></i> </a> </li>
+                <li class="borderSettings"> <a href="#"> <i class="far fa-calendar-alt"></i> </a> </li>
+                <li class="borderSettings"> <a href="#"> <i class="fas fa-bell"></i> </a> </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <script src="../js/navBar.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 15,
+          loop: true,
+        });
+      </script>
+
+</body>
+</html>
