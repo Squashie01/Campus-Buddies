@@ -12,6 +12,7 @@
         $lastName=$_POST['Last_Name'];
         $phoneNumber=$_POST['number'];
         $email=$_POST['email'];
+        $fileActualName=explode($fileName,'.' );
         $fileExt = explode('.', $fileName);
         $fileActualExt = strtolower(end($fileExt));
 
@@ -29,10 +30,10 @@
 
                     mkdir("../uploads/" .$folderC);
 
-                    $fileNameNew = $firstname.$lastName.uniqid('', true).".".$fileActualExt;
+                    $fileNameNew = $firstname.$lastName.uniqid('', true).".".$fileName;
                     $fileDestination = '../uploads/'.$folderC."/" .$fileNameNew;
                     move_uploaded_file($fileTmpName, $fileDestination);
-                    header("Location: ../code/sighn_up.php?uploadsuccess");
+                    header("Location: ../code/sighn_up.php?$fileActualName");
 
                 
                   /*  $servername = "localhost";
