@@ -1,5 +1,7 @@
 CREATE DATABASE Campus_Buddies; 
 
+(copy the bellow thing all at onse but type the create databse first)
+
 CREATE TABLE Student(
 StudentId varchar(25),
 First_Name varchar(25),
