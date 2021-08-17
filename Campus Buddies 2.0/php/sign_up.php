@@ -35,23 +35,23 @@
                     header("Location: ../code/sighn_up.php?uploadsuccess");
 
                 
-                  /*  $servername = "localhost";
+                    $servername = "localhost";
                     $username = "root";
                     $password = "";
-                    $dbname = "campusbuddies";
+                    $dbname = "campus_buddies";
                     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
                     $qry="SELECT Picture FROM  student";
                     $result=mysqli_query ($conn, $qry);
 
-                    /*$uploadPic="INSERT INTO student(Picture, First_Name)
-							  VALUES ('$fileDestination', 'Luke');";
-                              mysqli_query($conn, $uploadPic); */
+                    $uploadPic="INSERT INTO student(Picture, First_Name)
+							  VALUES ('$fileDestination', '$firstname');";
+                              mysqli_query($conn, $uploadPic); 
                     
-                              /*while($row = $result ->fetch_assoc())
+                              while($row = $result ->fetch_assoc())
                               {
                                   echo  "<img src='$row[Picture]' alt='crap'>";
-                              } */
+                              } 
                     
                 }
                 else

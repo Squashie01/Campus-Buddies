@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" type="image" href="../images/CampusBuddyNoText.png">
 
-    <title> Campus Buddy | Student Profile </title>
+    <title> Campus Buddy | Student ID </title>
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -19,22 +19,10 @@
 <body>
 
     <!-- This is the Navigation Bar -->
-    <nav class="navbar">       
+    <nav class="navbar" id="navbar">       
 
-        <div id="sidebar">
-            <div class="toggle-btn" onclick ="show()">
-            <div id="openMenu"><i class="fa fa-bars"></i></div>
-            </div>
-
-            <div class="closeMenu" onclick ="hide()"><i class="fa fa-times"></i></div>
-
-            <ul>
-            <li>Home</li>
-            <li>Student Support</li>
-            <a href="StudentProfile.html"> <li class="active">Student ID Profile</li> </a>
-            <li>Semester Calendar</li>
-            <li>Library</li>
-            </ul>
+        <div class="StudentIdBackButton">
+            <i class="fas fa-chevron-left"></i>
         </div>
 
         <div class="NotificationAndSettings">
@@ -125,66 +113,35 @@
         }
         */
 
-        /* This is the section below the nav bar */
+        /* Student Id Info */
         echo
         '
-            <div class="StudentInfo">
-                <div class="StudentProfileImage">
-                    <img src="' . $picture . '" alt="">
+            <div class="StudentIdInfo">
+                <div class="StudentIdPhoto">
+                    <img src="' . $picture . '" alt="damm">
                 </div>
-                <div class="BasicStudentInfo">
-                    <span class="StudentName"> '. $firstName . ' ' . $lastName . ' </span>
-                    <span class="StudentType"> Full-Time Student </span>
-                    <div class="roleDiv">+ Role</div>
+                <span class="StudentIdName"> '. $firstName . ' ' . $lastName . ' </span>
+                <span class="StudentIdType"> Full-Time Student</span>
+                <span class="StudentIdIdNum"> Student ID # </span>
+                <span class="StudentIdNumber"> ' . $studentId . ' </span>
+                <span class="StudentIdDivision"> Division </span>
+                <span class="StudentIdDivisionName"> Fine Arts </span>
+                <div class="StudentIdBarcode">
+                    <img src="https://th.bing.com/th/id/OIP.HtmS7mNn7k32_cnCShU03gAAAA?pid=ImgDet&rs=1" alt="">
                 </div>
+                <span class="StudentIdYear"> YEAR 2020-2021 </span>
             </div>
         '
     ?>
 
     
-
-    <div class="StudentProfileInfo">
-        <div class="MoreStudentInfo">
-            <span class="InfoHeader"> My Programme </span>
-            <span class="InfoTitle"> Bachelor Degree in Graphic Design </span>
-            <span class="InfoHeader"> Core Subjects </span>
-            <span class="YearAndSemester"> Year 1, Semester 1 </span>
     
-            <!-- Swiper -->
-            <div class="swiperContainer mySwiper ExerciseSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
-                        <span class="MenuSpan"> Breakfast Menu </span>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
-                        <span class="MenuSpan"> Lunch Menu </span>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
-                        <span class="MenuSpan"> Dessert Menu </span>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
-                        <span class="MenuSpan"> Drink Menu </span>
-                    </div>
-                </div>
-            </div>  
-    
-            <div class="TimeTable">
-                <span> Timetable </span>
-                <img src="../images/pdf.png" alt="">
-            </div>
-        </div>
-        
-    </div>
 
     <!-- Bottom Navigation Bar -->
     <div class="bottomNavBar">
         <ul class="BottomNavUl">
             <li class="borderSettings"> <a href="#"> <i class="fas fa-exclamation-triangle"></i> </a> </li>
-            <li class="borderSettings"> <a href="Homepage.php"> <i class="fas fa-home"></i> </a> </li>
+            <li class="borderSettings"> <a href="#"> <i class="fas fa-home"></i> </a> </li>
             <li class="borderSettings"> <a href="#"> <i class="far fa-calendar-alt"></i> </a> </li>
             <li class="borderSettings"> <a href="#"> <i class="fas fa-bell"></i> </a> </li>
         </ul>

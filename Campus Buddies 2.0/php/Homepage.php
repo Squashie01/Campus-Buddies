@@ -30,7 +30,7 @@
             <ul>
               <a href="php/Homepage.php"> <li class="active">Home</li> </a>
               <li>Student Support</li>
-              <li>Student ID Profile</li>
+              <a href="StudentID.php"> <li>Student ID Profile</li> </a>
               <li>Semester Calendar</li>
               <li>Library</li>
             </ul>
@@ -44,14 +44,15 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "campusbuddies";
+        $dbname = "campus_buddies";
         $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-        $qry="SELECT StudentID, First_Name  FROM student";
+        $qry="SELECT StudentID, First_Name, Picture  FROM student";
             $result=mysqli_query ($conn, $qry);
 
         $didTheyLogIn="n";
         $firstName="defult";
+        $picture = "default";
         $studentId=$_SESSION['id'];
 
         //this checks for if they are a student
@@ -60,6 +61,7 @@
             if($studentId == $row["StudentID"]) 
             {
                 $firstName = $row["First_Name"];
+                $picture = $row["Picture"];
                 $didTheyLogIn = "y";
                 //echo "this works";
                // echo $row["First_Name"];
@@ -121,7 +123,7 @@
         "
             <div class='userBar'>
                 <span> Hi, ". $firstName . " </span>
-                <img src='../images/CampusBuddyNoText.png' alt=''>
+                <a href='StudentProfile.php'> <img src=" . $picture . " alt=''> </a>
             </div>
         "
     ?>

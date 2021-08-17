@@ -631,11 +631,12 @@ button
     }
 
     /* Student Id CSS */
-    .navbar
+    #navbar
     {
         display: flex;
         justify-content: space-between;
     }
+
     .StudentIdBackButton
     {
         width: 50%;

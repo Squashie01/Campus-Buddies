@@ -5,7 +5,7 @@
             $servername = "localhost";
 			$username = "root";
 			$password = "";
-			$dbname = "campusbuddies";
+			$dbname = "campus_buddies";
             $conn = mysqli_connect($servername, $username, $password, $dbname);
 
             $studentId=$_POST['studentId'];
