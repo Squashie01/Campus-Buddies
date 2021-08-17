@@ -191,10 +191,10 @@
     <!-- Bottom Navigation Bar -->
     <div class="bottomNavBar">
         <ul class="BottomNavUl">
-            <li class="borderSettings"> <a href="#"> <i class="fas fa-exclamation-triangle"></i> </a> </li>
-            <li class="borderSettings"> <a href="#"> <i class="fas fa-home"></i> </a> </li>
-            <li class="borderSettings"> <a href="#"> <i class="far fa-calendar-alt"></i> </a> </li>
-            <li class="borderSettings"> <a href="#"> <i class="fas fa-bell"></i> </a> </li>
+            <li class="borderSettings"> <a href=""> <i class="fas fa-exclamation-triangle"></i> </a> </li>
+            <li class="borderSettings"> <a href="Homepage.php" class="activePage"> <i class="fas fa-home"></i> </a> </li>
+            <li class="borderSettings"> <a href="Calendar.html"> <i class="far fa-calendar-alt"></i> </a> </li>
+            <li class="borderSettings"> <a href="Notifications.html"> <i class="fas fa-bell"></i> </a> </li>
         </ul>
     </div>
     

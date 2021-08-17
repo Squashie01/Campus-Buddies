@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="shortcut icon" type="image" href="../images/CampusBuddyNoText.png">
+
+    <title> Campus Buddy | Campus Shop </title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="CalendarBackground">
+    <div class="PageContainer">
+        <!-- This is the top section of the page that doesn't scroll -->
+        <div class="CampusNoScroll">
+            <!-- This is the Navigation Bar -->
+            <div class="CanteenNavBar">
+                <div id="sidebar">
+                    <div class="toggle-btn" onclick ="show()">
+                    <div id="openMenu"><i class="fa fa-bars"></i></div>
+                    </div>
+    
+                    <div class="closeMenu" onclick ="hide()"><i class="fa fa-times"></i></div>
+    
+                    <ul>
+                    <li>Home</li>
+                    <li>Student Support</li>
+                    <li>Student ID Profile</li>
+                    <li>Semester Calendar</li>
+                    <li>Library</li>
+                    </ul>
+                </div>
+                <div class="CartButton">
+                    <i class="fas fa-shopping-cart">
+                        <div class="NumOfItems"> 5 </div>
+                    </i>
+                </div>
+            </div>
+
+            <!-- This is the page title -->
+            <div class="PageTitle">
+                <span> Welcome To  </span> <br>
+                The Campus Shop
+            </div>
+
+            <!-- Search Bar -->
+            <div class="SearchBar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="content">
+                <div class="shops">
+                    <img src="https://th.bing.com/th/id/R.4e1a2624d3235b155ee9485bad012b67?rik=csuvuBCB8Zv1pQ&riu=http%3a%2f%2f1ognf42hy3nf2wgost3074z7-wpengine.netdna-ssl.com%2fwp-content%2fuploads%2f2018%2f04%2fTaco-Bar.jpg&ehk=AFygfS%2frEDJ4MUxaR88izP8CaWzthfupCAhZTiAmSJg%3d&risl=&pid=ImgRaw&r=0" alt="">
+                    <div class="whiteFade"></div>
+                    <div class="contentContainer">
+                        <h3> Looking for a bite of deliciousness? </h3>
+                        <p> View Menu </p>
+                        <button> Campus Canteen </button>
+                    </div>
+                </div>
+                <div class="shops">
+                    <img src="https://th.bing.com/th/id/OIP.m8JVGmDBps1TKwnl8HwGkgHaE8?w=302&h=201&c=7&o=5&dpr=1.25&pid=1.7" alt="">
+                    <div class="whiteFade"></div>
+                    <div class="contentContainer">
+                        <h3> One Stop Shop </h3>
+                        <p> View Supplies </p>
+                        <button> Book Source </button>
+                    </div>
+                </div>
+                <div class="CheckAccountBal">
+                    <i class="fas fa-credit-card"></i>
+                    <span> Check Account Balance </span>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Bottom Navigation Bar -->
+        <div class="bottomNavBar">
+            <ul class="BottomNavUl">
+                <li class="borderSettings"> <a href="#"> <i class="fas fa-exclamation-triangle"></i> </a> </li>
+                <li class="borderSettings"> <a href="#"> <i class="fas fa-home"></i> </a> </li>
+                <li class="borderSettings"> <a href="#"> <i class="far fa-calendar-alt"></i> </a> </li>
+                <li class="borderSettings"> <a href="#"> <i class="fas fa-bell"></i> </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../js/navBar.js"></script>
+</body>
+</html>

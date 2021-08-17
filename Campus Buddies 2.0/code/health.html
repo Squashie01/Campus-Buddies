@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image" href="../images/CampusBuddyNoText.png">
+
+    <title> Campus Buddy | Health & Wellness </title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="CalendarBackground">
+
+    <div class="CalendarContainer">
+
+        <!-- This is the Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo"> <img src="../images/CampusBuddiesTextLogo.png" alt=""> </div>
+
+            <div id="sidebar">
+                <div class="toggle-btn" onclick ="show()">
+                <div id="openMenu"><i class="fa fa-bars"></i></div>
+                </div>
+
+                <div class="closeMenu" onclick ="hide()"><i class="fa fa-times"></i></div>
+
+                <ul>
+                <li class="active">Home</li>
+                <li>Student Support</li>
+                <li>Student ID Profile</li>
+                <li>Semester Calendar</li>
+                <li>Library</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- This is the top section of the page that doesn't scroll -->
+        <div class="NoScroll">
+            <!-- This is the Section Below the Navigation Bar -->
+            <div class="userBar">
+                <span> Hi, Chris </span>
+                <img src="../images/CampusBuddyNoText.png" alt="">
+            </div>
+
+            <!-- This is the page title -->
+            <div class="PageTitle">
+                <span> Health & Wellness </span>
+            </div>
+
+            <!-- Month and Year -->
+            <div class="MonthAndYearDiv">
+                <select name="" id="" class="Customize">
+                    <option value="" disabled selected> Emergency Contacts </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="whiteSpace"></div>
+
+        <div class="HealthContent">
+            <div class="HealthBanner"></div>
+            <div class="Text"> How can we assist you today? </div>
+            <div class="HealthCategories">
+                <div class="CategoriesText"> Categories </div>
+                <div class="CategoriesBoxes">
+                    <div class="CategoryBox">
+                        <img src="../images/CampusBuddyNoText.png" alt="">
+                        <span> Check Up </span>
+                    </div>
+                    <div class="CategoryBox">
+                        <img src="../images/CampusBuddyNoText.png" alt="">
+                        <span> Eye Treatment </span>
+                    </div>
+                    <div class="CategoryBox">
+                        <img src="../images/CampusBuddyNoText.png" alt="">
+                        <span> Dental </span>
+                    </div>
+                    <div class="CategoryBox">
+                        <img src="../images/CampusBuddyNoText.png" alt="">
+                        <span> Pregnancy </span>
+                    </div>
+                    <div class="CategoryBox">
+                        <img src="../images/CampusBuddyNoText.png" alt="">
+                        <span> Gym </span>
+                    </div>
+                    <div class="CategoryBox">
+                        <img src="../images/CampusBuddyNoText.png" alt="">
+                        <span> Medical Queries </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <div class="bottomNavBar">
+            <ul class="BottomNavUl">
+                <li class="borderSettings"> <a href="#"> <i class="fas fa-exclamation-triangle"></i> </a> </li>
+                <li class="borderSettings"> <a href="#"> <i class="fas fa-home"></i> </a> </li>
+                <li class="borderSettings"> <a href="#"> <i class="far fa-calendar-alt"></i> </a> </li>
+                <li class="borderSettings"> <a href="#"> <i class="fas fa-bell"></i> </a> </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <script src="../js/navBar.js"></script>
+
+</body>
+</html>
