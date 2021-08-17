@@ -19,12 +19,7 @@
 <body>
 
     <!-- This is the Navigation Bar -->
-    <nav class="navbar">
-        <div class="NotificationAndSettings">
-            <div> <i class="fas fa-bell"></i> </div>
-            <div> <i class="fas fa-cog"></i> </div>
-        </div>
-        
+    <nav class="navbar">       
 
         <div id="sidebar">
             <div class="toggle-btn" onclick ="show()">
@@ -36,10 +31,15 @@
             <ul>
             <li>Home</li>
             <li>Student Support</li>
-            <li>Student ID Profile</li>
+            <a href="StudentProfile.html"> <li class="active">Student ID Profile</li> </a>
             <li>Semester Calendar</li>
             <li>Library</li>
             </ul>
+        </div>
+
+        <div class="NotificationAndSettings">
+            <div> <i class="fas fa-bell"></i> </div>
+            <div> <i class="fas fa-cog"></i> </div>
         </div>
     </nav>
 
@@ -53,46 +53,43 @@
         <div class="BasicStudentInfo">
             <span class="StudentName"> Chris Richardson </span>
             <span class="StudentType"> Full-Time Student </span>
+            <div class="roleDiv">+ Role</div>
         </div>
     </div>
 
-    <!-- Campus Map -->
-    <div class="CampusMap">
-        <h4> Check Out This New Campus Map Feature! </h4>
-        <button> Open Map </button>
-    </div>
-
-    <div class="MoreStudentInfo">
-        <span class="InfoHeader"> My Programme </span>
-        <span class="InfoTitle"> Bachelor Degree in Graphic Design </span>
-        <span class="InfoHeader"> Core Subjects </span>
-        <span class="YearAndSemester"> Year 1, Semester 1 </span>
-
-        <!-- Swiper -->
-        <div class="swiperContainer mySwiper ExerciseSwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
-                    <span class="MenuSpan"> Breakfast Menu </span>
+    <div class="StudentProfileInfo">
+        <div class="MoreStudentInfo">
+            <span class="InfoHeader"> My Programme </span>
+            <span class="InfoTitle"> Bachelor Degree in Graphic Design </span>
+            <span class="InfoHeader"> Core Subjects </span>
+            <span class="YearAndSemester"> Year 1, Semester 1 </span>
+    
+            <!-- Swiper -->
+            <div class="swiperContainer mySwiper ExerciseSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
+                        <span class="MenuSpan"> Breakfast Menu </span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
+                        <span class="MenuSpan"> Lunch Menu </span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
+                        <span class="MenuSpan"> Dessert Menu </span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
+                        <span class="MenuSpan"> Drink Menu </span>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
-                    <span class="MenuSpan"> Lunch Menu </span>
-                </div>
-                <div class="swiper-slide">
-                    <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
-                    <span class="MenuSpan"> Dessert Menu </span>
-                </div>
-                <div class="swiper-slide">
-                    <img class="MenuImg" src="https://th.bing.com/th/id/OIP.pV7QklQsth6Xat9CS3vwtAHaDr?pid=ImgDet&rs=1" alt="">
-                    <span class="MenuSpan"> Drink Menu </span>
-                </div>
+            </div>  
+    
+            <div class="TimeTable">
+                <span> Timetable </span>
+                <img src="../images/pdf.png" alt="">
             </div>
-        </div>  
-
-        <div class="TimeTable">
-            <span> Timetable </span>
-            <img src="../images/pdf.png" alt="">
         </div>
         
     </div>

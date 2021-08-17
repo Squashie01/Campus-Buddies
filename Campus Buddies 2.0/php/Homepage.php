@@ -28,7 +28,7 @@
             <div class="closeMenu" onclick ="hide()"><i class="fa fa-times"></i></div>
 
             <ul>
-              <li class="active">Home</li>
+              <a href="php/Homepage.php"> <li class="active">Home</li> </a>
               <li>Student Support</li>
               <li>Student ID Profile</li>
               <li>Semester Calendar</li>
