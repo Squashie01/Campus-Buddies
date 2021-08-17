@@ -62,3 +62,40 @@ Note varchar(200),
 PRIMARY KEY(EventNotesId),
 FOREIGN KEY(DivisionId) REFERENCES Division(DivisionId)
 );
+
+CREATE TABLE  organization  (
+   Id  int(11) NOT NULL,
+   Name  text NOT NULL,
+   PRIMARY KEY(Id)
+);
+
+CREATE TABLE  calendarevents  (
+  Id int(11) NOT NULL,
+  Title text NOT NULL,
+  Start date NOT NULL,
+  End date NOT NULL,
+   AllDay  tinyint(1) NOT NULL DEFAULT 0,
+   Description  text NOT NULL,
+   Backgroundcolor  text NOT NULL DEFAULT 'Orange',
+   PRIMARY KEY(Id)
+);
+
+CREATE TABLE  studentCalendar  (
+   OrgId int(11) DEFAULT NULL,
+   StudentId  varchar(25) DEFAULT NULL,
+   CalendarEventID  int(11) NOT NULL AUTO_INCREMENT,
+   Created  timestamp NOT NULL DEFAULT current_timestamp(),
+   PRIMARY KEY(CalendarEventID),
+   FOREIGN KEY(StudentId) REFERENCES Student(StudentId),
+   FOREIGN KEY(OrgId) REFERENCES organization(Id)
+);
+
+CREATE TABLE  teacherCalendar  (
+   OrgId int(11) DEFAULT NULL,
+   TeacherId  varchar(25) DEFAULT NULL,
+   CalendarEventID  int(11) NOT NULL AUTO_INCREMENT,
+   Created  timestamp NOT NULL DEFAULT current_timestamp(),
+   PRIMARY KEY(CalendarEventID),
+   FOREIGN KEY(TeacherId) REFERENCES teacher(TeacherId),
+   FOREIGN KEY(OrgId) REFERENCES organization(Id)
+);
