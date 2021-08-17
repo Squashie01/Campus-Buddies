@@ -1,0 +1,64 @@
+CREATE DATABASE Campus_Buddies; 
+
+CREATE TABLE Student(
+StudentId varchar(25),
+First_Name varchar(25),
+Last_name varchar(25),
+Email varchar(50),
+Picture varchar(100),
+PRIMARY KEY(StudentId)
+);
+
+CREATE TABLE teacher(
+TeacherId varchar(25),
+First_Name varchar(25),
+Last_Name varchar(25),
+Email varchar(50),
+Picture varchar(100),
+PRIMARY KEY(TeacherId)
+);
+
+CREATE TABLE Courses(
+CourseId varchar(25),
+Course_Name varchar(25),
+Course_Time varchar(25),
+Course_Class_Room varchar(25),
+TeacherId varchar(25) NOT NULL,
+PRIMARY KEY(CourseId),
+FOREIGN KEY(TeacherId) REFERENCES teacher(TeacherId)
+);
+
+
+CREATE TABLE Division(
+DivisionId varchar(25),
+Division_Name varchar(25),
+CourseId varchar(25) NOT NULL,
+StudentId varchar(25) NOT NULL,
+PRIMARY KEY(DivisionId),
+FOREIGN KEY(CourseId) REFERENCES Courses(CourseId),
+FOREIGN KEY(StudentId) REFERENCES Student(StudentId)
+);
+
+CREATE TABLE StudentLogin(
+unickStudentLogId int NOT NULL AUTO_INCREMENT,
+StudentId varchar(25) NOT NULL,
+Password varchar(20),
+PRIMARY KEY(unickStudentLogId),
+FOREIGN KEY(StudentId) REFERENCES Student(StudentId)
+);
+
+CREATE TABLE TeacherLogin(
+unickTeacherLogId int NOT NULL AUTO_INCREMENT,
+TeacherId varchar(25) NOT NULL,
+Password varchar(20),
+PRIMARY KEY(unickTeacherLogId),
+FOREIGN KEY(TeacherId) REFERENCES teacher (TeacherId)
+);
+
+CREATE TABLE EventNotes(
+EventNotesId varchar(25),
+DivisionId varchar(25) NOT NULL,
+Note varchar(200),
+PRIMARY KEY(EventNotesId),
+FOREIGN KEY(DivisionId) REFERENCES Division(DivisionId)
+);
