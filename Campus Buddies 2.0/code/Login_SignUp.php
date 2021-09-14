@@ -10,6 +10,10 @@
     <title> Campus Buddy | Login or Sign Up</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <?php
+        session_start();
+        $_SESSION['login_error']="n";
+    ?>
 </head>
 <body>
 
