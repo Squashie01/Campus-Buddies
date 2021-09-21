@@ -12,6 +12,7 @@
         $lastName=$_POST['Last_Name'];
         $phoneNumber=$_POST['number'];
         $email=$_POST['email'];
+        $password2=$_POST['password'];
         $fileActualName=explode($fileName,'.' );
         $fileExt = explode('.', $fileName);
         $fileActualExt = strtolower(end($fileExt));
@@ -42,11 +43,13 @@
                     $dbname = "campus_buddies";
                     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-                    $qry="SELECT Picture FROM  student";
+                    $qry="SELECT * FROM  student";
                     $result=mysqli_query ($conn, $qry);
 
-                    $uploadPic="INSERT INTO student(Picture, First_Name)
-							  VALUES ('$fileDestination', '$firstname');";
+                    $idN=rand(1000,10000);
+
+                    $uploadPic="INSERT INTO student(Picture, First_Name, Last_name, Email, 	StudentId)
+							  VALUES ('$fileDestination', '$firstname', '$lastName', '$email', '$idN');";
                               mysqli_query($conn, $uploadPic); 
                     
                               while($row = $result ->fetch_assoc())
@@ -54,6 +57,14 @@
                                   echo  "<img src='$row[Picture]' alt='crap'>";
                               } 
                     
+                    $qry="SELECT * FROM  studentlogin";
+                    $result=mysqli_query ($conn, $qry);
+                    
+                    $uploadPass="INSERT INTO studentlogin(StudentId, Password)
+                    VALUES ('$idN', '$password2');";
+                    mysqli_query($conn, $uploadPass); 
+          
+
                 }
                 else
                 {

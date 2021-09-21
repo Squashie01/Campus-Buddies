@@ -36,7 +36,10 @@
                 <p> phone number</p>
                 <input type="input" name="number">
                 <br/>
-                <p>Please upload your jpg file </p>
+                <p> please enter the password you want to use </p>
+                <input type="input" name="password">
+                <br/>
+                <p>Please upload your profile picture </p>
                 <input type="file" name="file">
                 </br>
                 </br>
