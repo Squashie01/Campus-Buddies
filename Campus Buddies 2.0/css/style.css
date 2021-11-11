@@ -1,27 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-html, body
-{
+html,
+body {
     height: 100%;
 }
 
-body
-{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Nunito';
     background-color: var(--background-Color);
-
 }
 
-a
-{
+a {
     text-decoration: none;
     color: var(--black);
 }
 
-button
-{
+button {
     background-color: var(--primary-orange);
     color: var(--white);
     border: none;
@@ -32,16 +27,11 @@ button
     text-align: center;
 }
 
-.activePage
-{
+.activePage {
     color: var(--white);
 }
 
-
-
-
-:root
-{
+:root {
     --primary-orange: #ff4d00;
     --FadedOrange: rgba(255, 77, 0, 0.493);
     --FadedBrown: rgba(167, 52, 14, 0.4);
@@ -54,16 +44,16 @@ button
     --BoxBg: var(--white);
 }
 
-.darkMode
-{
+.darkMode {
     --background-Color: #162a39;
     --CalendarBg: #162a39;
     --BoxBg: #143144;
 }
 
+
 /* Search Bar */
-.SearchBar
-{
+
+.SearchBar {
     background-color: var(--white);
     width: 75%;
     height: 40px;
@@ -77,22 +67,21 @@ button
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.SearchBar i
-{
+.SearchBar i {
     color: var(--grey);
     margin-right: 15px;
 }
 
-.SearchBar input
-{
+.SearchBar input {
     width: 70%;
     border: none;
     outline: none;
 }
 
+
 /* Carousel CSS */
-.swiper-container 
-{
+
+.swiper-container {
     padding-right: 15%;
     padding-left: 15%;
     width: 70%;
@@ -103,14 +92,12 @@ button
     background-color: var(--background-Color);
 }
 
-.swiper-slide 
-{
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background-color: var(--BoxBg);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 15px;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,8 +114,7 @@ button
     justify-content: center;
 }
 
-.swiper-slide img 
-{
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -137,16 +123,14 @@ button
     filter: brightness(40%);
 }
 
-.swiper-slide span
-{
+.swiper-slide span {
     position: absolute;
     font-weight: 600;
     color: var(--white);
     margin-top: -15px;
 }
 
-.swiper-slide button
-{
+.swiper-slide button {
     position: absolute;
     font-size: 14px;
     height: 27px;
@@ -159,8 +143,7 @@ button
     color: var(--primary-orange);
 }
 
-.swiper-container 
-{
+.swiper-container {
     margin-left: auto;
     margin-right: auto;
 }
@@ -168,40 +151,35 @@ button
 
 /* Login and SignUp Page CSS */
 
-.LSContainer
-{
+.LSContainer {
     display: flex;
     justify-content: center;
     margin-top: 10%;
 }
 
-.LSLogo, .LSButtons
-{
+.LSLogo,
+.LSButtons {
     height: 50vh;
     width: 40%;
 }
 
-.LSLogo
-{
+.LSLogo {
     display: flex;
     align-items: center;
 }
 
-.LSLogo img
-{
+.LSLogo img {
     width: 100%;
 }
 
-.LSButtons
-{
+.LSButtons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#buttonCSS
-{
+#buttonCSS {
     background-color: var(--primary-orange);
     color: var(--white);
     font-size: 20px;
@@ -216,47 +194,40 @@ button
 }
 
 
-
 /* Login Page CSS */
 
-.LoginPageContainer
-{
+.LoginPageContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.LoginContainer
-{
+.LoginContainer {
     display: flex;
     flex-direction: column;
 }
 
-.LoginHeader
-{
+.LoginHeader {
     display: flex;
     justify-content: center;
     font-size: 30px;
     margin-top: 30px;
 }
 
-.LoginBack
-{
+.LoginBack {
     width: 30px;
     height: 30px;
     margin-left: 30px;
 }
 
-.LoginText
-{
+.LoginText {
     flex-grow: 1;
     text-align: center;
     margin-right: 60px;
     font-weight: 700;
 }
 
-.LoginForm
-{
+.LoginForm {
     display: flex;
     flex-direction: column;
     margin-right: auto;
@@ -266,80 +237,59 @@ button
     width: 75%;
 }
 
-.LoginForm input
-{
+.LoginForm input {
     font-size: 20px;
     outline: none;
     border: none;
     border-bottom: 2px solid var(--black);
 }
 
-.bottomLogo
-{
+.bottomLogo {
     height: 8vh;
     width: 9em;
     margin-left: auto;
     margin-right: auto;
 }
 
-.bottomLogo img
-{
+.bottomLogo img {
     width: 100%;
 }
 
-.LoginBtn
-{
+.LoginBtn {
     margin-left: auto;
     margin-right: auto;
 }
 
-
-    
-
-
-@media screen and (max-width: 740px)
-{
+@media screen and (max-width: 740px) {
     /* Login and SignUp Page CSS */
-    .LSContainer
-    {
+    .LSContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
-    .LSLogo, .LSButtons
-    {
+    .LSLogo,
+    .LSButtons {
         width: 85%;
         height: 45vh;
         margin-left: auto;
         margin-right: auto;
     }
-
-
-
     /* Nav Bar CSS */
-    nav
-    {
+    nav {
         width: 100%;
         margin-top: 17px;
     }
-    
-    .navbar .logo img
-    {
+    .navbar .logo img {
         width: 110px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-
-    #sidebar div.openMenu i
-    {
+    #sidebar div.openMenu i {
         margin-left: 30px;
         font-size: 25px;
     }
-
-    #sidebar 
-    {
+    #sidebar {
         position: fixed;
         width: 250px;
         height: 100%;
@@ -351,91 +301,68 @@ button
         display: flex;
         flex-direction: column;
     }
-
-    #sidebar div.closeMenu i
-    {
+    #sidebar div.closeMenu i {
         font-size: 25px;
         color: var(--white);
         margin-top: 25px;
         padding-left: 25px;
     }
-
-    #sidebar ul li 
-    {
+    #sidebar ul li {
         list-style: none;
         color: #fff;
         font-size: 17px;
         padding: 26px 24px;
     }
-
-    #sidebar ul li.active
-    {
+    #sidebar ul li.active {
         font-weight: 600;
         text-decoration: underline;
     }
-
-    #sidebar .toggle-btn 
-    {
+    #sidebar .toggle-btn {
         position: absolute;
         top: 25px;
         left: 330px;
         font-size: 25px;
     }
-
-    .toggle-btn span 
-    {
+    .toggle-btn span {
         width: 45px;
         height: 4px;
         background: #000;
         display: block;
         margin-top: 4px;
     }
-
-    #sidebar.active 
-    {
+    #sidebar.active {
         left: 0;
     }
-
-
     /* This is the section with the Student's name and their profile button*/
-    .userBar
-    {
+    .userBar {
         display: flex;
         justify-content: space-between;
         width: 100%;
         margin-top: 10px;
     }
-
-    .userBar span
-    {
+    .userBar span {
         display: flex;
         align-items: center;
         font-size: 25px;
         font-weight: 600;
         margin-left: 30px;
     }
-
-    .userBar img
-    {
+    .userBar img {
         width: 3.5rem;
         height: 3.5rem;
         margin-right: 30px;
         border-radius: 50%;
         border: 2px solid var(--primary-orange);
     }
-
     /* This is the search bar */
-    .ServicesSearchBar
-    {
+    .ServicesSearchBar {
         display: flex;
         justify-content: center;
         margin-top: 17px;
         width: 100%;
         height: auto;
     }
-
-    .ServicesSearchBar input
-    {
+    .ServicesSearchBar input {
         background-color: var(--lightGrey);
         border: none;
         outline: none;
@@ -444,25 +371,17 @@ button
         height: 27px;
         text-align: center;
     }
-
-
     /* Discover Text CSS */
-
-    .DiscoverText
-    {
+    .DiscoverText {
         margin-top: 15px;
     }
-
-    .DiscoverText span
-    {
+    .DiscoverText span {
         margin-left: 30px;
         font-weight: 600;
         color: var(--grey);
     }
-
     /* Services Boxes CSS */
-    .Services
-    {
+    .Services {
         width: 90%;
         margin-top: 10px;
         margin-left: auto;
@@ -471,9 +390,7 @@ button
         gap: 17px;
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .ServiceBox
-    {
+    .ServiceBox {
         width: 150px;
         height: 18vh;
         display: flex;
@@ -485,173 +402,124 @@ button
         margin-right: auto;
         cursor: pointer;
     }
-
-    .ServiceBox img
-    {
+    .ServiceBox img {
         width: 65px;
         margin-left: auto;
         margin-right: auto;
     }
-
-    .ServiceBox span
-    {
+    .ServiceBox span {
         text-align: center;
         margin-top: 15px;
         font-size: 13px;
     }
-
     /* This is the Student Profile CSS */
-    .NotificationAndSettings
-    {
+    .NotificationAndSettings {
         display: flex;
         align-items: center;
         float: right;
         margin-right: 30px;
     }
-
-    #StudentProfileMenu
-    {
+    #StudentProfileMenu {
         display: flex;
     }
-
-    .NotificationAndSettings i
-    {
+    .NotificationAndSettings i {
         font-size: 20px;
         margin: 0px 7px;
         margin-top: 12px;
         margin-bottom: 15px;
     }
-
-    .StudentInfo
-    {
+    .StudentInfo {
         display: flex;
         width: 80%;
         margin-left: 30px;
         margin-right: 30px;
     }
-
-    .StudentInfo .StudentProfileImage
-    {
+    .StudentInfo .StudentProfileImage {
         width: 5rem;
         height: 5rem;
     }
-
-    .StudentInfo .StudentProfileImage img
-    {
+    .StudentInfo .StudentProfileImage img {
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
         border: 2px solid var(--primary-orange);
     }
-
-    .StudentInfo .BasicStudentInfo
-    {
+    .StudentInfo .BasicStudentInfo {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 55%;
         padding-left: 7%;
     }
-
-    .StudentInfo .BasicStudentInfo span.StudentName
-    {
+    .StudentInfo .BasicStudentInfo span.StudentName {
         font-size: 20px;
         font-weight: 600;
     }
-
-    .StudentInfo .BasicStudentInfo span.StudentType
-    {
+    .StudentInfo .BasicStudentInfo span.StudentType {
         font-size: 13px;
         opacity: 65%;
     }
-
-    .roleDiv
-    {
+    .roleDiv {
         background-color: var(--lightGrey);
         opacity: 60%;
         width: 70%;
         margin-top: 5px;
         text-align: center;
     }
-
-    .StudentProfileInfo
-    {
+    .StudentProfileInfo {
         background-color: var(--lightGrey);
         height: 100vh;
     }
-    
-    .MoreStudentInfo
-    {
+    .MoreStudentInfo {
         display: flex;
         flex-direction: column;
         margin-left: 30px;
         margin-top: 30px;
     }
-
-    .MoreStudentInfo span.InfoTitle
-    {
+    .MoreStudentInfo span.InfoTitle {
         font-weight: 600;
         margin-bottom: 15px;
     }
-    .MoreStudentInfo span.InfoHeader
-    {
+    .MoreStudentInfo span.InfoHeader {
         font-size: 13px;
         opacity: 75%;
         color: var(--grey);
     }
-
-    .MoreStudentInfo span:first-child
-    {
+    .MoreStudentInfo span:first-child {
         margin-top: 15px;
     }
-
-    .MoreStudentInfo span.YearAndSemester
-    {
+    .MoreStudentInfo span.YearAndSemester {
         font-size: 12px;
         font-weight: 600;
         margin-bottom: 10px;
     }
-
-    .TimeTable
-    {
+    .TimeTable {
         margin-top: 25px;
         display: flex;
         flex-direction: column;
     }
-
-    .TimeTable span
-    {
+    .TimeTable span {
         font-size: 20px;
         font-weight: 600;
     }
-
-    .TimeTable img
-    {
+    .TimeTable img {
         width: 55px;
     }
-
     /* Student Id CSS */
-    #navbar
-    {
+    #navbar {
         display: flex;
         justify-content: space-between;
     }
-
-    .StudentIdBackButton
-    {
+    .StudentIdBackButton {
         width: 50%;
         display: flex;
         align-items: center;
         margin-left: 30px;
     }
-
-    .StudentIdBackButton i
-    {
+    .StudentIdBackButton i {
         font-size: 25px;
     }
-
-    .StudentIdInfo
-    {
+    .StudentIdInfo {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -661,8 +529,7 @@ button
         margin-right: auto;
         width: 90%;
     }
-    .StudentIdPhoto
-    {
+    .StudentIdPhoto {
         width: 12rem;
         height: 12rem;
         margin-left: auto;
@@ -671,88 +538,60 @@ button
         border-radius: 50%;
         border: 2px solid var(--primary-orange);
     }
-
-    .StudentIdPhoto img
-    {
+    .StudentIdPhoto img {
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
     }
-
-    span.StudentIdName
-    {
+    span.StudentIdName {
         font-size: 25px;
         font-weight: 600;
     }
-
-    span.StudentIdType
-    {
+    span.StudentIdType {
         font-size: 15px;
         color: grey;
         opacity: 70%;
         margin-bottom: 25px;
     }
-
-    span.StudentIdIdNum
-    {
+    span.StudentIdIdNum {
         font-size: 15px;
         color: grey;
         opacity: 70%;
     }
-
-    span.StudentIdNumber
-    {
+    span.StudentIdNumber {
         font-size: 23px;
         font-weight: 600;
         margin-bottom: 25px;
     }
-
-    span.StudentIdDivision
-    {
+    span.StudentIdDivision {
         font-size: 15px;
         color: grey;
         opacity: 70%;
     }
-
-    span.StudentIdDivisionName
-    {
+    span.StudentIdDivisionName {
         font-size: 23px;
         font-weight: 600;
     }
-
-    .StudentIdBarcode
-    {
+    .StudentIdBarcode {
         height: 6rem;
         margin-bottom: 25px;
     }
-
-    .StudentIdBarcode img
-    {
+    .StudentIdBarcode img {
         height: 6rem;
     }
-
-    span.StudentIdYear
-    {
+    span.StudentIdYear {
         font-size: 23px;
         font-weight: 600;
     }
-
-
-
     /* Calendar CSS */
-    .CalendarBackground
-    {
+    .CalendarBackground {
         background-color: var(--CalendarBg);
     }
-    
-    .CalendarContainer
-    {
+    .CalendarContainer {
         display: flex;
         flex-direction: column;
     }
-
-    .NoScroll
-    {
+    .NoScroll {
         background-image: linear-gradient(var(--primary-orange), var(--FadedOrange));
         padding-top: 0;
         height: 12em;
@@ -762,23 +601,17 @@ button
         position: fixed;
         z-index: 5;
     }
-
-    .NoScroll div.userBar
-    {
+    .NoScroll div.userBar {
         margin-top: 55px;
     }
-
-    .PageTitle
-    {
+    .PageTitle {
         font-size: 20px;
         font-weight: 600;
         text-align: center;
         margin-top: 15px;
         padding-bottom: 15px;
     }
-
-    .MonthAndYearDiv
-    {
+    .MonthAndYearDiv {
         width: 75%;
         height: 2em;
         margin-left: auto;
@@ -791,21 +624,16 @@ button
         box-shadow: 2px 2px 10px 2px #969696;
         color: var(--primary-orange);
     }
-
-    .MonthAndYearBack, .MonthAndYearForward
-    {
+    .MonthAndYearBack,
+    .MonthAndYearForward {
         font-size: 20px;
     }
-
-    .MonthAndYear
-    {
+    .MonthAndYear {
         margin-left: 15%;
         margin-right: 15%;
         font-weight: 600;
     }
-
-    .whiteSpace
-    {
+    .whiteSpace {
         width: 100%;
         height: 12em;
         background-color: var(--white);
@@ -815,9 +643,7 @@ button
         position: fixed;
         z-index: 4;
     }
-
-    .CalendarContentDiv
-    {
+    .CalendarContentDiv {
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -828,31 +654,23 @@ button
         justify-content: center;
         align-items: center;
     }
-
-    .Calendar
-    {
-        background-color: seagreen;
+    .Calendar {
+        background-color: white;
         height: 25vh;
         width: 100%;
         border-radius: 25px;
         margin-bottom: 25px;
     }
-
-    .AddTaskAndAppointmentBtn
-    {
+    .AddTaskAndAppointmentBtn {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-    .AddTaskAndAppointmentBtn button:first-child
-    {
+    .AddTaskAndAppointmentBtn button:first-child {
         margin-right: 4%;
     }
-
-    .AddEventButton
-    {
+    .AddEventButton {
         text-align: center;
         font-size: 15px;
         font-weight: 600;
@@ -863,15 +681,11 @@ button
         border: none;
         border-radius: 5px;
     }
-
-    .DisplayEventsHere
-    {
+    .DisplayEventsHere {
         width: 100%;
         height: 20vh;
     }
-
-    .EventCategoryName
-    {
+    .EventCategoryName {
         background-color: var(--white);
         display: flex;
         justify-content: space-between;
@@ -880,15 +694,11 @@ button
         border-radius: 5px;
         margin-top: 25px;
     }
-
-    .EventCategoryName span
-    {
+    .EventCategoryName span {
         font-weight: 600;
         font-size: 17px;
     }
-
-    .NumberOfEvents
-    {
+    .NumberOfEvents {
         background-color: seagreen;
         width: 2em;
         height: 2em;
@@ -897,11 +707,8 @@ button
         justify-content: center;
         align-items: center;
     }
-
-
     /* Bottom Navigation Bar */
-    .bottomNavBar
-    {
+    .bottomNavBar {
         width: 100%;
         height: auto;
         padding: 0;
@@ -910,9 +717,7 @@ button
         bottom: 0;
         z-index: 5;
     }
-
-    ul.BottomNavUl
-    {
+    ul.BottomNavUl {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -923,46 +728,31 @@ button
         margin-right: auto;
         background-color: var(--primary-orange);
     }
-
-    ul.BottomNavUl li
-    {
+    ul.BottomNavUl li {
         list-style: none;
         text-align: center;
     }
-
-    ul.BottomNavUl li i
-    {
+    ul.BottomNavUl li i {
         font-size: 27px;
     }
-
-    .borderSettings
-    {
+    .borderSettings {
         list-style: none;
         width: 25%;
     }
-
-    .borderSettings:not(:nth-child(4n)) 
-    {
+    .borderSettings:not(:nth-child(4n)) {
         border-right: 1px solid var(--FadedBrown);
     }
-
     /* Logout Page CSS */
-    .LogOutForm
-    {
+    .LogOutForm {
         display: flex;
         justify-content: center;
     }
-
-
     /* Library Book Details */
-    .PageContainer
-    {
+    .PageContainer {
         display: flex;
         flex-direction: column;
     }
-
-    .PageContainer .BookSummary
-    {
+    .PageContainer .BookSummary {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -970,9 +760,7 @@ button
         text-align: center;
         margin-top: 560px;
     }
-
-    .PageContainer .whiteSpace
-    {
+    .PageContainer .whiteSpace {
         width: 100%;
         height: 34em;
         background-color: var(--white);
@@ -980,16 +768,12 @@ button
         position: fixed;
         z-index: 4;
     }
-
-    .NoScroll .backButton i
-    {
+    .NoScroll .backButton i {
         font-size: 25px;
         margin-top: 25px;
         margin-left: 30px;
     }
-
-    .NoScroll .BookCoverImage
-    {
+    .NoScroll .BookCoverImage {
         width: 50%;
         height: 120%;
         margin-left: auto;
@@ -997,16 +781,12 @@ button
         margin-top: 10px;
         border-radius: 25px;
     }
-
-    .NoScroll .BookCoverImage img
-    {
+    .NoScroll .BookCoverImage img {
         width: 100%;
         height: 100%;
         border-radius: 25px;
     }
-
-    .NoScroll .BookTitle
-    {
+    .NoScroll .BookTitle {
         font-size: 17px;
         font-weight: 500;
         text-align: center;
@@ -1015,9 +795,7 @@ button
         margin-left: auto;
         margin-top: 25px;
     }
-
-    .NoScroll .BookAuther
-    {
+    .NoScroll .BookAuther {
         font-size: 13px;
         font-weight: 400;
         text-align: center;
@@ -1027,29 +805,25 @@ button
         margin-left: auto;
         margin-top: 7px;
     }
-
-    .NoScroll .SomeBookDetails ul li .PageNumber, .BookLanguage, .BookPublished
-    {
+    .NoScroll .SomeBookDetails ul li .PageNumber,
+    .BookLanguage,
+    .BookPublished {
         font-size: 14px;
         text-align: center;
     }
-
-    .NoScroll .Pages, .Language, .Published
-    {
+    .NoScroll .Pages,
+    .Language,
+    .Published {
         font-size: 12px;
         color: grey;
         text-align: center;
     }
-
-    .SomeBookDetails
-    {
+    .SomeBookDetails {
         width: 100%;
         height: auto;
         padding: 0;
     }
-
-    ul.BookDetailsList
-    {
+    ul.BookDetailsList {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -1059,31 +833,21 @@ button
         margin-left: auto;
         margin-right: auto;
     }
-
-    ul.BookDetailsList li
-    {
+    ul.BookDetailsList li {
         list-style: none;
         text-align: center;
     }
-
-    ul.BookDetailsList li i
-    {
+    ul.BookDetailsList li i {
         font-size: 27px;
     }
-
-    .DetailBlock
-    {
+    .DetailBlock {
         list-style: none;
         width: 25%;
     }
-
-    .DetailBlock:not(:nth-child(3n)) 
-    {
+    .DetailBlock:not(:nth-child(3n)) {
         border-right: 1px solid grey;
     }
-
-    .Borrow
-    {
+    .Borrow {
         width: 100%;
         height: 14vh;
         padding: 0;
@@ -1097,26 +861,19 @@ button
         align-items: center;
         background-color: var(--white);
     }
-
-    .Borrow span
-    {
+    .Borrow span {
         font-size: 12px;
         color: grey;
     }
-
-    .Borrow button
-    {
+    .Borrow button {
         font-size: 17px;
         text-align: center;
         width: 60%;
         margin-top: 10px;
         margin-bottom: 25px;
     }
-
     /* Canteen CSS */
-
-    .CanteenNoScroll
-    {
+    .CanteenNoScroll {
         background-image: linear-gradient(var(--primary-orange), var(--FadedOrange));
         padding-top: 0;
         height: 7.2em;
@@ -1126,22 +883,17 @@ button
         position: fixed;
         z-index: 5;
     }
-
-    .CanteenNavBar
-    {
+    .CanteenNavBar {
         width: 100%;
         height: 25px;
         margin-top: 28px;
     }
-    .CartButton i
-    {
+    .CartButton i {
         font-size: 25px;
         float: right;
         margin-right: 30px;
     }
-
-    .NumOfItems
-    {
+    .NumOfItems {
         width: 20px;
         height: 20px;
         float: right;
@@ -1153,50 +905,38 @@ button
         text-align: center;
         background-color: var(--white);
     }
-
-    .NumOfItems span
-    {
+    .NumOfItems span {
         font-size: 6px;
         text-align: center;
     }
-
-    .MenuTitles, .MenuName
-    {
+    .MenuTitles,
+    .MenuName {
         margin-left: 30px;
         margin-top: 25px;
         color: var(--grey);
     }
-
-    .swiperContainer 
-    {
+    .swiperContainer {
         height: 142px;
         margin-top: 15px;
         background-color: var(--background-Color);
     }
-
-    .swiperContainer .swiper-wrapper .swiper-slide
-    {
+    .swiperContainer .swiper-wrapper .swiper-slide {
         width: 25% !important;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
     }
-
-    .swiper-button-next, .swiper-button-prev
-    {
+    .swiper-button-next,
+    .swiper-button-prev {
         color: grey;
         margin-top: 160px;
     }
-
-    img.MenuImg
-    {
+    img.MenuImg {
         width: 75%;
         height: 50%;
         margin-top: -45%;
         border-radius: 5px;
         filter: brightness(100%);
     }
-
-    span.MenuSpan
-    {
+    span.MenuSpan {
         color: var(--grey);
         width: 75%;
         margin-top: 95%;
@@ -1204,9 +944,7 @@ button
         margin-left: auto;
         font-size: 12px;
     }
-
-    .CanteenwhiteSpace
-    {
+    .CanteenwhiteSpace {
         width: 100%;
         height: 22.5em;
         background-color: var(--white);
@@ -1214,18 +952,14 @@ button
         position: fixed;
         z-index: 4;
     }
-
-    .DisplayFoods
-    {
+    .DisplayFoods {
         margin-left: 30px;
         margin-right: 30px;
         font-size: 12px;
         text-align: center;
         margin-top: 370px;
     }
-
-    .FoodItem
-    {
+    .FoodItem {
         height: 100px;
         background-color: var(--white);
         border-radius: 15px;
@@ -1236,24 +970,18 @@ button
         padding: 10px;
         margin-top: 12px;
     }
-
-    .FoodImg
-    {
+    .FoodImg {
         width: 28%;
         height: 95%;
         margin-right: 2%;
         display: flex;
         align-items: center;
     }
-
-    .FoodImg img
-    {
+    .FoodImg img {
         width: 100%;
         border-radius: 5px;
     }
-
-    .FoodInfo
-    {
+    .FoodInfo {
         width: 50%;
         height: 95%;
         margin-right: 2%;
@@ -1261,18 +989,14 @@ button
         flex-direction: column;
         justify-content: space-around;
     }
-
-    .FoodOptions
-    {
+    .FoodOptions {
         width: 18%;
         height: 75%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
-    .FoodInfo span.FoodDesc
-    {
+    .FoodInfo span.FoodDesc {
         font-size: 9px;
         text-align: left;
         margin-top: 5px;
@@ -1280,47 +1004,34 @@ button
         text-overflow: ellipsis;
         max-height: 25px;
     }
-
-    .MoreFoodInfo
-    {
+    .MoreFoodInfo {
         text-align: left;
         color: var(--primary-orange);
     }
-
-    .SmallPortion, .LargePortion
-    {
+    .SmallPortion,
+    .LargePortion {
         height: 50%;
         display: flex;
         align-items: center;
         border-radius: 10px;
         color: white;
     }
-
-    .SmallPortion
-    {
+    .SmallPortion {
         background-color: black;
     }
-    
-    .LargePortion
-    {
+    .LargePortion {
         background-color: var(--primary-orange);
         margin-top: 25%;
     }
-
-    .FoodName
-    {
+    .FoodName {
         font-size: 14px;
         text-align: left;
     }
-
-    .DisplayFoods .FoodItem:last-child
-    {
+    .DisplayFoods .FoodItem:last-child {
         margin-bottom: 75px;
     }
-
     /* Campus Shop */
-    .CampusNoScroll
-    {
+    .CampusNoScroll {
         background-image: linear-gradient(var(--primary-orange), var(--FadedOrange));
         padding-top: 0;
         height: 10em;
@@ -1330,34 +1041,26 @@ button
         position: fixed;
         z-index: 5;
     }
-
-    .content
-    {
+    .content {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .shops
-    {
+    .shops {
         width: 75%;
         height: 150px;
         margin-top: 30px;
         border-radius: 25px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
-
-    .shops img
-    {
+    .shops img {
         display: block;
         width: 100%;
         height: 100%;
         border-radius: 25px;
         object-fit: cover;
     }
-
-    .whiteFade
-    {
+    .whiteFade {
         width: 100%;
         height: 100%;
         margin-top: -150px;
@@ -1365,9 +1068,7 @@ button
         position: relative;
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
     }
-
-    .contentContainer
-    {
+    .contentContainer {
         width: 80%;
         height: 80%;
         display: flex;
@@ -1378,18 +1079,14 @@ button
         margin-left: auto;
         margin-right: auto;
     }
-
-    .contentContainer h3
-    {
+    .contentContainer h3 {
         color: black;
         font-size: 17px;
         text-align: center;
         margin-bottom: -30px;
         z-index: 25;
     }
-
-    .contentContainer p
-    {
+    .contentContainer p {
         color: black;
         font-size: 13px;
         font-weight: 400;
@@ -1398,18 +1095,14 @@ button
         margin-bottom: 1px;
         z-index: 25;
     }
-
-    .contentContainer button 
-    {
+    .contentContainer button {
         width: 70%;
         font-size: 13px;
         background-color: white;
         color: var(--primary-orange);
         z-index: 25;
     }
-
-    .CheckAccountBal
-    {
+    .CheckAccountBal {
         width: 75%;
         height: 50px;
         margin-top: 50px;
@@ -1420,15 +1113,11 @@ button
         justify-content: center;
         align-items: center;
     }
-
-    .CheckAccountBal i
-    {
+    .CheckAccountBal i {
         margin-right: 2%;
     }
-
     /* Noticications */
-    .Customize
-    {
+    .Customize {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -1438,47 +1127,36 @@ button
         outline: none;
         color: var(--grey);
     }
-
-    .NotificationContentDiv
-    {
+    .NotificationContentDiv {
         width: 80%;
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 175px;
         margin-bottom: 75px;
     }
-
-    .NewNotifications
-    {
+    .NewNotifications {
         color: var(--grey);
         font-size: 12px;
     }
-
-    .notification
-    {
+    .notification {
         background-color: aquamarine;
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 15px;
         margin-top: 25px;
     }
-
-    .notification h4
-    {
+    .notification h4 {
         font-size: 14px;
         padding-top: 5px;
     }
-
-    .notification p
-    {
+    .notification p {
         margin-top: -12px;
         font-size: 12px;
         padding-bottom: 5px;
     }
-
     /* Health CSS */
-    .HealthContent, .GymContent
-    {
+    .HealthContent,
+    .GymContent {
         margin-top: 160px;
         width: 85%;
         margin-left: auto;
@@ -1487,51 +1165,38 @@ button
         justify-content: center;
         flex-direction: column;
     }
-
-    .GymContent
-    {
+    .GymContent {
         margin-top: 150px;
     }
-
-    .HealthBanner, .GymBanner
-    {
+    .HealthBanner,
+    .GymBanner {
         height: 17vh;
         width: 100%;
         border-radius: 25px;
         background-color: aquamarine;
     }
-
-    .Text
-    {
+    .Text {
         font-size: 17px;
         color: var(--grey);
         margin-top: 7px;
     }
-
-    .HealthCategories
-    {
+    .HealthCategories {
         height: 35vh;
         width: 100%;
     }
-
-    .CategoriesText
-    {
+    .CategoriesText {
         margin-top: 7px;
         margin-bottom: 7px;
         font-size: 20px;
         font-weight: 400;
     }
-
-    .CategoriesBoxes
-    {
+    .CategoriesBoxes {
         display: grid;
         gap: 25px;
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
     }
-
-    .CategoryBox
-    {
+    .CategoryBox {
         width: 90px;
         height: 13vh;
         display: flex;
@@ -1543,17 +1208,13 @@ button
         margin-right: auto;
         cursor: pointer;
     }
-
-    .CategoryBox img
-    {
+    .CategoryBox img {
         width: 45px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
     }
-
-    .CategoryBox span
-    {
+    .CategoryBox span {
         text-align: center;
         font-size: 12px;
         width: 80%;
@@ -1562,56 +1223,42 @@ button
         margin-bottom: 5px;
         text-align: center;
     }
-
     /* GYM CSS */
-    .FitnessTip
-    {
+    .FitnessTip {
         font-size: 15px;
         color: var(--grey);
         margin-bottom: 15px;
         margin-top: 15px;
     }
-
-    .ExerciseSwiper
-    {
+    .ExerciseSwiper {
         width: 100%;
         height: 16vh;
         overflow-x: hidden;
         margin-top: -12px;
         background-color: transparent;
     }
-
-    .ExerciseSwiper .swiper-wrapper .swiper-slide
-    {
+    .ExerciseSwiper .swiper-wrapper .swiper-slide {
         width: 17% !important;
         height: 8vh;
         margin-top: 10px;
     }
-
-    .ExerciseSwiper .swiper-wrapper .swiper-slide img
-    {
+    .ExerciseSwiper .swiper-wrapper .swiper-slide img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         margin: 0;
     }
-
-    .ExerciseSwiper .swiper-wrapper .swiper-slide span
-    {
+    .ExerciseSwiper .swiper-wrapper .swiper-slide span {
         margin-top: 100px;
         font-size: 10px;
     }
-
-    .MoreExerciseDiv
-    {
+    .MoreExerciseDiv {
         width: 100%;
         border-top-left-radius: 35px;
         border-top-right-radius: 35px;
         background-color: var(--white);
     }
-
-    .MoreExercise
-    {
+    .MoreExercise {
         height: 12vh;
         margin-top: 15px;
         display: flex;
@@ -1619,66 +1266,48 @@ button
         align-items: center;
         flex-direction: row;
     }
-
-    .ExerciseImg
-    {
+    .ExerciseImg {
         width: 25%;
         height: 10vh;
         border-radius: 10px;
         background-color: violet;
     }
-
-    .ExerciseImg img
-    {
+    .ExerciseImg img {
         width: 100%;
         height: 100%;
         border-radius: 10px;
         object-fit: cover;
     }
-    
-    .ExerciseTitle
-    {
+    .ExerciseTitle {
         width: 35%;
         height: 10vh;
     }
-
-    .TitleSpan, .SubSpan
-    {
+    .TitleSpan,
+    .SubSpan {
         font-size: 11px;
     }
-
-    .SubSpan
-    {
+    .SubSpan {
         color: var(--grey);
     }
-
-    .MoreInfoExercise
-    {
+    .MoreInfoExercise {
         width: 25%;
         height: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-    .MoreInfoExercise span
-    {
+    .MoreInfoExercise span {
         margin-right: 5px;
     }
-
-    .MoreInfoExercise span, .MoreInfoExercise i
-    {
+    .MoreInfoExercise span,
+    .MoreInfoExercise i {
         font-size: 12px;
         color: var(--primary-orange);
     }
-
-    .MoreExercise:not(:last-child) 
-    {
+    .MoreExercise:not(:last-child) {
         border-bottom: 1px solid var(--lightGrey);
     }
-
-    .MoreExercise:last-child
-    {
+    .MoreExercise:last-child {
         margin-bottom: 75px;
     }
 }
